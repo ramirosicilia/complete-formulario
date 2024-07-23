@@ -1,0 +1,315 @@
+html{
+    font-size: 62.5%
+} 
+
+body{
+    font-size: 1.6 em;
+    background-color: #f0f8ff;
+} 
+
+.header{
+    width: 100%;
+} 
+
+.header h2{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+
+
+
+.centrado_logica{
+    width: 100%;
+     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+
+ 
+} 
+
+.formulario{
+    width: 25%; 
+    border-radius: 1.25rem;
+    background-color: rgba(44, 44, 172, 0.425);
+    box-shadow: inset 2px 14px 23px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 2px 14px 23px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 2px 14px 23px 3px rgba(0,0,0,0.75);
+     display: grid; 
+     margin-top: 1rem;
+     padding: 2rem .5rem;
+     justify-content: center;
+     gap: .6rem;
+
+
+  
+}  
+
+.formulario__2{ 
+   position: absolute; 
+
+   min-height:70%; 
+   width: 25%; 
+    border-radius: 1.25rem;
+    background-color: rgba(44, 44, 172, 0.425);
+    box-shadow: inset 2px 14px 23px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 2px 14px 23px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 2px 14px 23px 3px rgba(0,0,0,0.75);
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 4rem 0px;
+    gap: 1rem;
+    opacity: 0;
+} 
+
+.activar{
+  top: 0;
+  left: 10rem;
+  z-index: 99999999999999;
+  overflow: hidden;
+  opacity: 1;
+  
+}
+
+
+
+
+
+
+
+input{
+    border-radius:  20px;
+    border: none;
+    padding: .7rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}  
+
+.input__usuario,  .input__password{ 
+  
+  width: 80%;
+  height: 2rem;
+  gap: unset;
+}
+
+[name="enviar"] { 
+ 
+    width: 50%;
+   margin: auto; 
+   border: none;
+   font-weight: bolder;
+   letter-spacing: 1px;
+    margin-top: 2rem;
+    background-color: rgba(61, 134, 218, 0.849);
+  
+     
+    
+  }  
+
+
+
+label{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+  .logica__informacion{ 
+    width: 50%;
+ 
+  } 
+
+  .parrafo{
+    font-size: 3rem;
+    font-weight: 700;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     letter-spacing: 2px;
+     line-height: 1.5;
+    
+  } 
+
+  #cerrar{
+    width: 100%;
+    font-size: 2rem;
+    color:black;
+    text-align: end;
+    position: absolute;
+    top:-40px;
+    left: 10px;
+    
+
+  }   
+   .container-informacion{
+    width: 50%;
+   }
+  
+
+   .informacion{
+    display: none;
+    position: relative;
+    width: 80%; 
+    height: auto;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1;
+    justify-content: center;
+  
+    font-size: 2rem;
+   
+ 
+   }  
+
+   .flex{
+    display: flex;
+   }
+
+   
+  
+   .opacidad{
+    opacity: 1;
+   } 
+
+   .opacidad__2{
+    opacity: 0;
+   } 
+
+   
+
+
+  
+
+
+  
+  
+
+@media (min-width: 550px) and (max-width: 768px) {
+
+
+
+  
+
+.formulario{
+    width: 40%; 
+     
+     padding: 1rem .5rem;
+   
+
+  
+}  
+
+.formulario__2{ 
+   
+   width: 40%; 
+   height: 10rem;
+   
+}   
+
+ label{
+  font-size: 1rem;
+ }
+
+input{
+
+    
+    width: 60%;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+   
+}   
+
+[name="enviar"] { 
+ 
+ padding: unset;
+ margin-top: 2rem;
+ height: 2.5rem;
+ align-self: center;
+ width: 100%;
+
+ 
+}     
+
+ 
+.informacion{
+    
+    margin: auto;
+    width: 100%; 
+    height: 30rem; 
+    margin-left: 2.2rem;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   justify-content: center;
+    font-size: 1rem;
+   
+
+   }   
+
+   
+
+   .input__password, .enviado, .input__usuario{
+    width: 60%;
+
+   }
+
+} 
+
+@media  (max-width: 550px){ 
+
+ 
+  .formulario{
+    width: 90%;
+  }  
+
+  input{
+    
+    width: 80%;
+    padding: .4rem 1rem;
+    font-size: 1rem;
+   
+}   
+
+label{
+  font-size: 1rem;
+}
+ 
+.input__usuario{
+  width: 40%;
+  height: 2rem;
+   
+} 
+
+.input__password{
+  width: 40%;
+  height: 2rem;
+
+}
+
+ .informacion{
+  font-size: .8rem;
+ }
+
+
+
+} 
+
+
+@media (max-width: 296px){ 
+
+  .informacion{
+    width: 40%; 
+    font-size: .7rem;
+   
+  }
+
+}
